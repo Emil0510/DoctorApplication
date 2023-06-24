@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/doctorImageView"
+        android:layout_width="102dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="@dimen/d_16"
+        android:background="@drawable/image_background"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doctor1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_16"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorImageView"
+        app:layout_constraintStart_toEndOf="@+id/doctorImageView"
+        app:layout_constraintTop_toTopOf="@+id/doctorImageView">
+
+
+        <TextView
+            android:id="@+id/doctorNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dr. Gilang Segara Bening"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/doctorProfessionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:text="Heart"
+            android:textColor="@color/gray2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctorNameTV" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctorProfessionTV">
+
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icons_star_1"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="147dp" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icons_star_1"
+                tools:layout_editor_absoluteX="165dp"
+                tools:layout_editor_absoluteY="147dp" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icons_star_1"
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="172dp" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icons_star_1"
+                tools:layout_editor_absoluteX="245dp"
+                tools:layout_editor_absoluteY="156dp" />
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icons_star_1"
+                tools:layout_editor_absoluteX="271dp"
+                tools:layout_editor_absoluteY="156dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hospitalTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_8"
+            android:text="Parsahabatam Hospital"
+            android:textColor="@color/gray2"
+            app:layout_constraintBottom_toBottomOf="@+id/doctorProfessionTV"
+            app:layout_constraintStart_toEndOf="@+id/imageView17" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_8"
+            app:layout_constraintBottom_toBottomOf="@+id/doctorProfessionTV"
+            app:layout_constraintStart_toEndOf="@+id/doctorProfessionTV"
+            app:layout_constraintTop_toTopOf="@+id/doctorProfessionTV"
+            app:srcCompat="@drawable/ellipse" />
+
+        <TextView
+            android:id="@+id/viewCountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_4"
+            android:text="(1221)"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/openCloseImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d_24"
+        android:layout_marginBottom="-4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/open" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
